@@ -1,0 +1,41 @@
+body 
+{
+	border: 1px black;
+    	padding: 20px;
+	background-image: url("images/wallpaper.png");
+	background-size: 1000px;
+}
+
+h1, h3, a, p, li
+{
+	font-family: arial;
+	color: lime;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+hr
+{
+	border-color:lime;
+}
+
+table
+{
+	border-collapse: collapse;
+	width: 100%
+}
+
+tr
+{
+	height: 40px;
+}
+
+table, td, th
+{
+	font-family: arial;
+	border: 1px solid lime;
+	color: lime;
+}

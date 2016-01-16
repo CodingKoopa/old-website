@@ -1,0 +1,25 @@
+/* Credit to T. J. Crowder of Stack Overflow
+ * for the javascript random text setup!
+ * http://stackoverflow.com/questions/17632519/how-do-i-display-randomly-chosen-text-with-an-associated-image
+ */
+
+(function() {
+      	var quotes = [
+       		{
+          		text: "Not affiliated with The Mushroom Kingdom",
+          		img:  "images/footer/mushroom.png"
+        	},
+        	{
+          		text: "Knowing the mouse might one day leave its hole and get the cheese... It fills you with determination",
+          		img:  "images/footer/mouse-cheese.jpg",
+        	},
+        	{
+          		text: "FEEL FREE TO VISIT IT ANY TIME",
+          		img:  "images/footer/trash.jpg",
+        	}
+      	];
+      	var quote = quotes[Math.floor(Math.random() * quotes.length)];
+      	document.getElementById("quote").innerHTML =
+	'<img src="' + quote.img + '" style="float:left" width="10%">' +
+        '<p>' + quote.text + '</p>';
+})();

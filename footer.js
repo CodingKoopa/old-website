@@ -14,7 +14,7 @@
           		img:  "images/footer/mouse-cheese.jpg",
         	},
         	{
-          		text: "FEEL FREE TO VISIT IT ANY TIME",
+          		text: "THAT'S THE GARBAGE CAN. FEEL FREE TO VISIT IT ANY TIME",
           		img:  "images/footer/trash.jpg",
         	}
       	];

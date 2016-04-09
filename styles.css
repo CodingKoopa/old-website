@@ -1,41 +1,73 @@
-body 
+body
 {
-	border: 1px black;
-    	padding: 20px;
-	background-image: url("images/wallpaper.png");
-	background-size: 1000px;
+	/* 20 pixel margin around */
+	margin: 20px;
+	background-color: #0898f8;
+
 }
 
-h1, h3, a, p, li
+footer
 {
-	font-family: arial;
+	/* All coordinates should be relative to the div */
+	position: relative;
+
+	/* First, we need to allocate enough space to take up all of the bottom of the screen 
+	   The existing margin started in main is 20px wide, so we account for that here */
+	left: -20px;
+	bottom: -20px;
+	/* The height of the footer image is 232 pixels */
+	height: 232px;
+
+	/* The width should be the viewport plus 40 pixels
+	   The div loses 20 pixels from the 20 pixel margin body
+	   and gets shifted over by another 20 when we set the left position */
+	width: calc(100% + 40px);
+
+	/* The castle image should only appear once, and the other image can loop horozantally */
+	background: url(images/footer-castle.png) no-repeat bottom,
+	url(images/footer-nocastle.png) repeat-x bottom;
+}
+
+/* Default green text for headers, paragraphs, list items, table headers, and table data */
+h1, h2, p, a, li, th, td
+{
+	font-family: arial, verdana;
 	color: lime;
 }
 
-a
+/* Normal text size is 14px */
+p, a, li, td, th
 {
-	text-decoration:none;
+	font-size: 14px;
 }
 
+/* Header text size is larger */
+h1
+{
+	font-size: 28px;
+}
+
+/* Sub-header text is smaller */
+h2
+{
+	font-size: 20px;
+}
+
+/* Border around images */
+img
+{
+	border-style: solid;
+	border-color: lime;
+}
+
+/* Center navigation */
+nav
+{
+	text-align: center;
+}
+
+/* Horozantal line green */
 hr
 {
-	border-color:lime;
-}
-
-table
-{
-	border-collapse: collapse;
-	width: 100%
-}
-
-tr
-{
-	height: 40px;
-}
-
-table, td, th
-{
-	font-family: arial;
-	border: 1px solid lime;
-	color: lime;
+	border-color: lime;
 }

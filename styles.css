@@ -1,31 +1,68 @@
+html 
+{
+	position: relative;
+
+	/* Stretch out the height, so that when we say 0px,
+	it will actually mean the bottom of the page, and not 
+	the bottom of what you can see at first*/
+    min-height: 100%;
+
+    /* Padding */
+	padding: 20px 20px 0px 20px;
+}
+
 body
 {
-	/* 20 pixel margin around */
-	margin: 20px;
-	background-color: #0898f8;
+	/* Allocate space for footer, which is 232 pixels tall */
+	margin: 0 0 232px;
 
+	padding: 10px;
+
+	border: 3px solid #4ab7ff;
+
+	border-radius: 10px 10px 10px 10px;
+
+	/* Blend in with footer images */
+	background-color: #0898f8;
+}
+
+.block
+{
+	padding: 10px;
+
+	margin-bottom: 10px;
+
+	border: 3px solid #4ab7ff;
+
+	border-radius: 10px 10px 10px 10px;
 }
 
 footer
 {
-	/* All coordinates should be relative to the div */
-	position: relative;
+	/* All coordinates should be relative to the page */
+	position: absolute;
 
-	/* First, we need to allocate enough space to take up all of the bottom of the screen 
-	   The existing margin started in main is 20px wide, so we account for that here */
-	left: -20px;
-	bottom: -20px;
+	/* Ensure that images are at the bottom right corner of the page */
+	left: 0;
+	bottom: 0;
+	/* Width-wise, take up the whole page */
+	width: 100%;
 	/* The height of the footer image is 232 pixels */
 	height: 232px;
-
-	/* The width should be the viewport plus 40 pixels
-	   The div loses 20 pixels from the 20 pixel margin body
-	   and gets shifted over by another 20 when we set the left position */
-	width: calc(100% + 40px);
 
 	/* The castle image should only appear once, and the other image can loop horozantally */
 	background: url(images/footer-castle.png) no-repeat bottom,
 	url(images/footer-nocastle.png) repeat-x bottom;
+
+	overflow: hidden;
+}
+
+.footerSpace
+{
+	/* Indent to dirt for readability */
+	margin-top: 190px;
+	/* Align with body */
+	padding-left: 25px;
 }
 
 /* Default green text for headers, paragraphs, list items, table headers, and table data */

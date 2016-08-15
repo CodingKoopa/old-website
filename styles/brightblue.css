@@ -1,3 +1,4 @@
+/* The whole page */
 html 
 {
 	position: relative;
@@ -6,38 +7,30 @@ html
 	it will actually mean the bottom of the page, and not 
 	the bottom of what you can see at first*/
     min-height: 100%;
-
-    /* Padding */
-	padding: 20px 20px 0px 20px;
 }
 
+/* The main part where all of the content resides */
 body
 {
 	/* Allocate space for footer, which is 232 pixels tall */
 	margin: 0 0 232px;
 
-	padding: 10px;
-
-	border: 3px solid #4ab7ff;
-
-	border-radius: 10px 10px 10px 10px;
-
 	/* Blend in with footer images */
 	background-color: #0898f8;
 }
 
-.block
+/* When mouse hovers over a block */
+.block:hover
 {
-	padding: 10px;
-
-	margin-bottom: 10px;
-
-	border: 3px solid #4ab7ff;
-
-	border-radius: 10px 10px 10px 10px;
+	background-color: #4ab7ff;
 }
 
-footer
+#catagory-block:hover
+{
+	background-color: transparent;
+}
+
+.footer
 {
 	/* All coordinates should be relative to the page */
 	position: absolute;
@@ -47,54 +40,44 @@ footer
 	bottom: 0;
 	/* Width-wise, take up the whole page */
 	width: 100%;
-	/* The height of the footer image is 232 pixels */
-	height: 232px;
 
 	/* The castle image should only appear once, and the other image can loop horozantally */
-	background: url(images/footer-castle.png) no-repeat bottom,
-	url(images/footer-nocastle.png) repeat-x bottom;
-
-	overflow: hidden;
+	background: url(../images/footer-castle.png) no-repeat bottom left,
+	url(../images/footer-nocastle.png) repeat-x bottom left;
 }
 
 .footerSpace
 {
 	/* Indent to dirt for readability */
 	margin-top: 190px;
+
 	/* Align with body */
-	padding-left: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1024px;
 }
 
-/* Default green text for headers, paragraphs, list items, table headers, and table data */
+/* Border for tables */
+.TKK-Post table, .TKK-Post th, .TKK-Post td
+{
+	/* Padding */
+	padding: 5px;
+	/* Border is same color as text */
+	border: 1px solid #4ab7ff;
+}
+
 h1, h2, p, a, li, th, td
 {
-	font-family: arial, verdana;
-	color: lime;
+	color: #414141;
 }
 
-/* Normal text size is 14px */
-p, a, li, td, th
-{
-	font-size: 14px;
-}
-
-/* Header text size is larger */
-h1
-{
-	font-size: 28px;
-}
-
-/* Sub-header text is smaller */
-h2
-{
-	font-size: 20px;
-}
 
 /* Border around images */
 img
 {
 	border-style: solid;
-	border-color: lime;
+	border-color: black;
+	border-width: 1px;
 }
 
 /* Center navigation */

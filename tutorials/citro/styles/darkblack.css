@@ -1,0 +1,98 @@
+/* Citro3D Image */
+#header-block img
+{
+	/* These measurements make the image about the same size as the text */
+	width: 57px;
+	height: 57px;
+}
+
+body
+{
+	/* Add background */
+	background: url(../images/background.png);
+
+	/* By default there's a margin of 8px for some reason */
+	margin: 0;
+}
+
+.block
+{
+	/* Grey color */
+	color: #414141;
+}
+
+/* Blocks that show the parameters of a function */
+.parameter-block
+{
+	/* Now the background is grey */
+	background: #414141 !important;
+}
+
+.parameter-block p
+{
+	/* Now the text is bright blue */
+	color: #4ab7ff;
+}
+
+.parameter-block td
+{
+	/* Now the text is bright blue */
+	color: #4ab7ff;
+}
+
+.parameter-block h2
+{
+	/* Now the text is bright blue */
+	color: #4ab7ff;
+}
+
+/* Blocks that have images in them */
+.image-block
+{
+	/* Center everything */
+	text-align: center;
+}
+
+/* Every section of an image block */
+.image-block div
+{
+	display: inline;
+
+	float: left;
+}
+
+/* Only image blocks with 3 images */
+.three-images div
+{
+	/* Resize to fit one third */
+	width: calc(100% / 3);	
+}
+
+/* The actual images */
+.image-block img
+{
+	/* Resize to fix section */
+	width: 100%;
+}
+
+/* The caption */
+.image-block p
+{
+	/* Now the text is grey */
+	color: #414141 !important;
+
+	/* No gap */
+	margin: 0;
+}
+
+code
+{
+	border: solid 10px #414141;
+	background-color: #414141 !important;
+}
+
+td
+{
+	/* Border is same color as text */
+	border: 1px solid #4ab7ff;
+}

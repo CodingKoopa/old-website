@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/darkblack.css">
+		<link rel="stylesheet" href="../../styles/common.css">
+		<!-- Import and init highlight.js -->
+		<link rel="stylesheet" href="../../highlight/styles/qtcreator_dark.css">
+		<script src="../../highlight/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		<meta charset="UTF-8">
+		<title>
+			Citro3D
+		</title>
+	</head>
+	<body>
+		<div class="block" id="header-block">
+			<h1 id="big-title">
+            <img src="images/citro3d.png">
+				Citro3D
+			</h1>
+			<p>
+				Welcome to my Citro3D Documentation! This is a collection of the notes that I've tooken while learning how to use the 3DS Citro3D library.
+			</p>
+			<p>
+				If you didn't know already, Citro3D is a library used to develop homebrew for the Nintendo 3DS. It provides an easy to use stateful interface to the PICA200 GPU, the GPU that the 3DS uses.
+			</p>
+		</div>
+		<div class="block">
+			<h1>
+                Configuring Output         
+            </h1>
+            <p>
+                Finally, we have to choose how our target will be shown on the screen.
+            </p>
+            <h2>
+                C3D_RenderTargetSetOutput
+            </h2>
+            <div class="parameter-block block">
+                <h2>
+                    Target
+                    <span style="float: right">
+                        C3D_RenderTarget Object Pointer
+                    </span>
+                </h2>
+                <p>
+                    For this, simply pass the C3D_RenderTarget object pointer we made before.
+                </p>
+            </div>
+            <div class="parameter-block block">
+                <h2>
+                    Screen
+                    <span style="float: right">
+                        gfxScreen_t Enum Value
+                    </span>
+                </h2>
+                <p>
+                    This controls which screen will be drawn on.
+                    <br>
+                    Possible values:
+                    <table>
+                        <tr>
+                            <td>
+                                GFX_TOP
+                            </td>
+                            <td>
+                                Top Screen
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                GFX_BOTTOM
+                            </td>
+                            <td>
+                                Bottom Screen
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+            <div class="parameter-block block">
+                <h2>
+                    Side
+                    <span style="float: right">
+                        gfx3dSide_t Enum Value
+                    </span>
+                </h2>
+                <p>
+                If you are drawing to the top screen and 3D is enabled, this controls which eyebuffer will be drawn on.
+                <br>
+                Possible values:
+                </p>
+                <table>
+                    <tr>
+                        <td>
+                            GFX_LEFT
+                        </td>
+                        <td>
+                            Left eyebuffer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            GFX_RIGHT
+                        </td>
+                        <td>
+                            Right eyebuffer
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    If you are drawing to the bottom screen or are drawing to the top screen, use GFX_LEFT.
+                </p>
+            </div>
+            <div class="parameter-block block">
+                <h2>
+                    Flags
+                    <span style="float: right">
+                        Unsigned 32-Bit Integer
+                    </span>
+                </h2>
+                <p>
+                This controls lots of other options, which you'll select using bitwise operators. Make a new unsigned 32-bit integer, and OR it with the following options:
+                <br>
+                <div class="parameter-block block">
+                    <h2>
+                        GX_TRANSFER_SCALING(x)
+                        <span style="float: right">
+                            GX_TRANSFER_SCALE Enum Value
+                        </span>
+                    </h2>
+                    <p>
+                        This is used for anti-aliasing.
+                        <br>
+                        Possible values:
+                    </p>
+                    <table>
+                        <tr>
+                            <td>
+                                GX_TRANSFER_SCALE_NO
+                            </td>
+                            <td>
+                                No anti-aliasing.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                GX_TRANSFER_SCALE_X
+                            </td>
+                            <td>
+                                2x1 anti-aliasing.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                GX_TRANSFER_SCALE_XY
+                            </td>
+                            <td>
+                                2x2 anti-aliasing.
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="block image-block three-images">
+                        <div>
+                            <img src="images/scalingno.png">
+                            <p>
+                                No Anti-Aliasing
+                            </p>
+                            </div>
+                        <div>
+                            <img src="images/scalingx.png">
+                            <p>
+                                X Anti-Aliasing
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/scalingxy.png">
+                            <p>
+                                XY Anti-Aliasing
+                            </p>
+                        </div>
+                        <br style="clear: left">
+                    </div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>

@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="../styles/common.css">
+		<link rel="stylesheet" href="styles/purple.css">
 		<title>
 			CHMOD Generator
 		</title>
 	</head>
 	<body>
 		<!-- Header -->
-		<header>
-			<a href="../">
-				<img src="../images/banner.png" alt="Banner">
-			</a>
-			<hr>
-		</header>
-		<!-- Description -->
-		<article>
-			<h1>
+		<div class="block" id="header-block">
+			<p id="big-title">
 				CHMOD Generator
-			</h1>
+			</p>
+			<a href="../">
+				<p>
+					< Home
+				</p>
+			</a>
 			<p>
 				CHMOD Generator is a Linux tool for changing the permissions of files.
 			</p>
@@ -28,8 +27,9 @@
 			<p>
 				This program is written in C++, with the Qt framework. Recently, I've been learning a lot about using Qt, and C++ so this started out as a test, but I kept on wanting to add features, so I'm releasing it.
 			</p>
-			<!-- Screenshot -->
 			<img src="images/chmod-generator-screenshot.png" alt="Screenshot">
+		</div>
+		<div class="block">
 			<!-- Feature List -->
 			<h2>
 			Features
@@ -55,37 +55,38 @@
 					Run the command without touching a terminal
 				</li>
 			</ul>
-			<!-- Download -->
-			<section id="download">
-				<h2>
-					Download Latest Version (1.2)
-				</h2>
-				<a href="https://github.com/TheKoopaKingdom/CHMOD-Generator/releases/download/v1.2/CHMOD">
-					<b>
-						Download executable
-					</b>		
-				</a>
-				<br>
-				<a href="https://github.com/TheKoopaKingdom/CHMOD-Generator/archive/v1.2.zip">
-					<b>
-						Download source code (Zip)
-					</b>
-				</a>
-				<p>
-					You can also download the latest source code, and compile it yourself, for new features not yet present in the latest release.
-				</p>
-				<a href="https://github.com/TheKoopaKingdom/CHMOD-Generator/archive/master.zip">
-					<b>
-						Download source code (Zip)
-					</b>
-				</a>
-				<br>
-				<a href="https://github.com/TheKoopaKingdom/CHMOD-Generator">
-					<b>
-						 Github Page
-					</b>
-				</a>
-			</section>
+		</div>
+		<div class="block" id="download">
+			<h2>
+				Latest Version (1.2)
+			</h2>
+			<a href="https://github.com/TheKoopaKingdom/CHMOD-Generator/releases/download/v1.2/CHMOD">
+				<b>
+					Download executable
+				</b>		
+			</a>
+			<br>
+			<a href="https://github.com/TheKoopaKingdom/CHMOD-Generator/archive/v1.2.zip">
+				<b>
+					Download source code (Zip)
+				</b>
+			</a>
+			<p>
+				You can also download the latest source code, and compile it yourself, for new features not yet present in the latest release.
+			</p>
+			<a href="https://github.com/TheKoopaKingdom/CHMOD-Generator/archive/master.zip">
+				<b>
+					Download source code (Zip)
+				</b>
+			</a>
+			<br>
+			<a href="https://github.com/TheKoopaKingdom/CHMOD-Generator">
+				<b>
+					 Github Page
+				</b>
+			</a>
+		</div>
+		<div class="block">
 			<!-- Older Downloads -->
 			<h2>
 				Download older versions
@@ -150,16 +151,6 @@
 					</td>
 				</tr>
 			</table>
-		</article>
-		<footer>
-			<div class="footerSpace">
-				<a style="text-decoration: none" href="http://validator.w3.org/check?uri=referer">
-    				<img style="border:0;width:88px;height:31px;" src="https://www.w3.org/Icons/valid-xhtml11" alt="Valid CSS!">
-    			</a>
-				<a style="text-decoration: none" href="http://jigsaw.w3.org/css-validator/check/referer">
-    				<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss " alt="Valid CSS!">
-    			</a>
-			</div>
-		</footer>
+		</div>
 	</body>
 </html>

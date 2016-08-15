@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles/brightblue.css">
+		<link rel="stylesheet" href="styles/common.css">
 		<meta charset="UTF-8">
 		<title>
 			The Koopa Kingdom
@@ -9,19 +10,59 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header>
-			<a href="./">
-				<img src="images/banner.png" alt="Banner">
-			</a>
-		</header>
-		<p>
-			Welcome to my new website!
-		</p>
-		<p>
-			This is where I'll be putting all of my projects, and possibly tutorials in the future.
-		</p>
-		<!-- Projects -->
-		<article>
+		<div class="block" id="header-block">
+			<p id="big-title">
+				The Koopa Kingdom
+			</p>
+			<p>
+				Welcome to my new website!
+			</p>
+			<p>
+				This is where I'll be putting all of my projects, and possibly tutorials in the future.
+			</p>
+		</div>
+		<!-- Hax -->
+		<div class="block" id="catagory-block">
+			<h1>
+				Exploit Hosting
+			</h1>
+			<!-- 3DS Browserhax -->
+			<div class="block">
+				<a href="exploits/3ds_browserhax">
+					<h2>
+						3DS Browserhax
+					</h2>
+				</a>
+			</div>
+			<div class="block">
+				<a href="exploits/slotlauncher">
+					<h2>
+						Wii U Slot Launcher
+					</h2>
+				</a>
+				<p>
+					A page that imitates the Wii U home menu, except with homebrew.
+				</p>
+			</div>
+		</div>
+		<!-- Tutorials -->
+		<div class="block" id="catagory-block">
+			<h1>
+				Tutorials
+			</h1>
+			<!-- Citro 3D -->
+			<div class="block">
+				<a href="tutorials/citro">
+					<h2>
+						Citro3D
+					</h2>
+				</a>
+				<p>
+					Coming Soon.
+				</p>
+			</div>
+		</div>
+		<div class="block" id="catagory-block">
 			<!-- Programs -->
 			<h1>
 				Programs
@@ -54,8 +95,8 @@
 					Download
 				</a>
 			</div>
-		</article>
-		<footer>
+		</div>
+		<div class="footer">
 			<div class="footerSpace">
 				<a style="text-decoration: none" href="http://validator.w3.org/check?uri=referer">
     				<img style="border:0;width:88px;height:31px;" src="https://www.w3.org/Icons/valid-xhtml11" alt="Valid CSS!">
@@ -64,6 +105,6 @@
     				<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
     			</a>
 			</div>
-		</footer>
+		</div>
 	</body>
 </html>

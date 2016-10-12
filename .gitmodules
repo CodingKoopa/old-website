@@ -1,0 +1,3 @@
+[submodule "tutorials/citro"]
+	path = tutorials/citro
+	url = https://github.com/TheKoopaKingdom/Citro3DTutorial

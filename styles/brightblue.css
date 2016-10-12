@@ -1,12 +1,13 @@
 /* The whole page */
-html 
+html
 {
+	/* Needed for the footer */
 	position: relative;
 
 	/* Stretch out the height, so that when we say 0px,
-	it will actually mean the bottom of the page, and not 
+	it will actually mean the bottom of the page, and not
 	the bottom of what you can see at first*/
-    min-height: 100%;
+  min-height: 100%;
 }
 
 /* The main part where all of the content resides */
@@ -16,20 +17,34 @@ body
 	margin: 0 0 232px;
 
 	/* Blend in with footer images */
-	background-color: #0898f8;
+	background: #0898f8;
+}
+
+/* Add in colors and borders for block */
+.block
+{
+	/* Light Blue Background */
+	background: #4ab7ff;
+	/* Curved Dark Blue Border */
+	border: 1px #0898f8 solid;
 }
 
 /* When mouse hovers over a block */
 .block:hover
 {
-	background-color: #4ab7ff;
+	/* Make the color match the page background */
+	background: #0898f8;
 }
 
-#catagory-block:hover
+/* When mouse hovers over a catagory-block */
+.catagory-block:hover
 {
-	background-color: transparent;
+	background: #4ab7ff;
+	/* No Border */
+	border: 0;
 }
 
+/* The container for the image at the bottom of the page */
 .footer
 {
 	/* All coordinates should be relative to the page */
@@ -57,37 +72,8 @@ body
 	max-width: 1024px;
 }
 
-/* Border for tables */
-.TKK-Post table, .TKK-Post th, .TKK-Post td
+h1, h2, h3, h4, h5, h6, p, a, li, th, td, figcaption
 {
-	/* Padding */
-	padding: 5px;
-	/* Border is same color as text */
-	border: 1px solid #4ab7ff;
-}
-
-h1, h2, p, a, li, th, td
-{
+	/* Grey color */
 	color: #414141;
-}
-
-
-/* Border around images */
-img
-{
-	border-style: solid;
-	border-color: black;
-	border-width: 1px;
-}
-
-/* Center navigation */
-nav
-{
-	text-align: center;
-}
-
-/* Horozantal line green */
-hr
-{
-	border-color: lime;
 }

@@ -1,0 +1,66 @@
+/* The whole page */
+html 
+{
+	position: relative;
+
+	/* Stretch out the height, so that when we say 0px,
+	it will actually mean the bottom of the page, and not 
+	the bottom of what you can see at first*/
+    min-height: 100%;
+}
+
+/* The main part where all of the content resides */
+body
+{
+	/* Allocate space for footer, which is 232 pixels tall */
+	margin: 0 0 232px;
+
+	/* Blend in with footer images */
+	background: #000000;
+}
+
+.block
+{
+	background: #0096c8;
+	border-color: #0096c8;
+}
+
+/* When mouse hovers over a block */
+.block:hover
+{
+	background: #0096c8;
+}
+
+.catagory-block:hover
+{
+	background: #0096c8;
+}
+
+/* Border for tables */
+.TKK-Post table, .TKK-Post th, .TKK-Post td
+{
+	/* Padding */
+	padding: 5px;
+	/* Border is same color as text */
+	border: 1px solid #4ab7ff;
+}
+
+h1, h2, p, a, li, th, td
+{
+	color: #ffffff;
+}
+
+
+/* Border around images */
+img
+{
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+/* Center navigation */
+nav
+{
+	text-align: center;
+}

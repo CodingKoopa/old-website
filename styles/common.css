@@ -1,89 +1,97 @@
-@font-face
-{
-	/* Source file */
-	src: url(../fonts/Gravity-Book.ttf);
-	/* Name */
-	font-family: 'Gravity-Book';
+@font-face {
+  /* Name */
+  font-family: 'Gravity-Book';
+  /* Source file */
+  src: url('../fonts/Gravity-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/Gravity-Book.woff') format('woff'), url('../fonts/Gravity-Book.ttf') format('truetype'), url('../fonts/Gravity-Book.svg#svgFontName') format('svg');
 }
+
 
 /* Basic foundation for everything */
-.block
-{
-	/* Don't take up all of the screen */
-	max-width: 1024px;
 
-	/* Center horozantally, 10px space in between each block vertically */
-	margin: 0 auto 10px !important;
-
-	/* Curved Light Blue Border */
-	border-radius: 10px;
-
-	/* Padding */
-	padding: 10px;
+.block {
+  /* Don't take up all of the screen */
+  max-width: 1024px;
+  /* Center horozantally, 10px space in between each block vertically */
+  margin: 0 auto 10px;
+  /* Curved Light Blue Border */
+  border-radius: 10px;
+  /* Padding */
+  padding: 10px;
 }
+
 
 /* The block at the top of the page */
-#header-block
-{
-	/* Don't curve top corners */
-	border-radius: 0 0 10px 10px;
+
+.header-block {
+  /* Don't curve top corners */
+  border-radius: 0 0 10px 10px;
 }
+
+
+/* When mouse hovers over a catagory-block */
+
+.header-block:hover {
+  background: #4ab7ff;
+  /* No Border */
+  border: 0;
+}
+
 
 /* The big text inside the header block */
-#big-title
-{
-	/* By default, this font size has a huge margin. */
-	margin: 10px 0;
 
-	/* Logo should be in center */
-	text-align: center;
-
-	/* Make the text huge */
-	font-size: 55pt;
+.big-title {
+  /* By default, this font size has a huge margin. */
+  margin: 10px 0;
+  /* Logo should be in center */
+  text-align: center;
+  /* Make the text huge */
+  font-size: 55pt;
 }
+
 
 /* When the mouse hovers over the title */
-#big-title:hover
-{
-	/* Mirror the text */
-	-webkit-transform:rotateY(180deg);
-	-moz-transform:rotateY(180deg);
-	-o-transform:rotateY(180deg);
-	-ms-transform:rotateY(180deg);
+
+.big-title:hover {
+  /* Mirror the text */
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-table
-{
-	border-spacing: 0px;
-	width: 100%;
-	margin: 0 0 10px 0;
+table {
+  border-spacing: 0;
+  width: 100%;
+  margin: 0 0 10px 0;
 }
 
-td
-{
-	width: 50%;
-	/* Padding */
-	padding: 5px;
+td {
+  /* Padding */
+  padding: 5px;
 }
+
 
 /* All text */
-h1, h2, h3, h4, h5, h6, p, a, li, th, td, figcaption
-{
-	font-family: Gravity-Book, arial, verdana;
+
+h1, h2, h3, h4, h5, h6, p, a, li, th, td, figcaption {
+  font-family: Gravity-Book, arial, verdana;
 }
+
 
 /* When the mouse hovers over a link */
-a:hover
-{
-	/* Underline text */
-	text-decoration: underline;
-	/* Add blue glow */
-	text-shadow: 1px 1px 2px black, 0 0 25px #4ab7ff, 0 0 5px #4ab7ff;
+
+a:hover {
+  /* Underline text */
+  text-decoration: underline;
+  /* Add blue glow */
+  text-shadow: 1px 1px 2px black, 0 0 25px #4ab7ff, 0 0 5px #4ab7ff;
 }
 
+
 /* When a link is clicked */
-a:active
-{
-	/* Un-Underline text */
-	text-decoration: none;
+
+a:active {
+  /* Un-Underline text */
+  text-decoration: none;
 }

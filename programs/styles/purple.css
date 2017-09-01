@@ -1,9 +1,7 @@
-body
-{
-	background: #830bb5 url(../images/gear.png) repeat;
+body {
+  background: #830bb5 url(../images/gear.png) repeat;
 }
 
-.block
-{
-	background-color: #4ab7ff;
+.block {
+  background-color: #4ab7ff;
 }

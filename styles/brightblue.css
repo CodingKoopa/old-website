@@ -1,79 +1,76 @@
 /* The whole page */
-html
-{
-	/* Needed for the footer */
-	position: relative;
 
-	/* Stretch out the height, so that when we say 0px,
+html {
+  /* Needed for the footer */
+  position: relative;
+  /* Stretch out the height, so that when we say 0px,
 	it will actually mean the bottom of the page, and not
 	the bottom of what you can see at first*/
   min-height: 100%;
 }
 
-/* The main part where all of the content resides */
-body
-{
-	/* Allocate space for footer, which is 232 pixels tall */
-	margin: 0 0 232px;
 
-	/* Blend in with footer images */
-	background: #0898f8;
+/* The main part where all of the content resides */
+
+body {
+  /* Allocate space for footer, which is 232 pixels tall */
+  margin: 0 0 232px;
+  /* Blend in with footer images */
+  background: #0898f8;
 }
+
 
 /* Add in colors and borders for block */
-.block
-{
-	/* Light Blue Background */
-	background: #4ab7ff;
-	/* Curved Dark Blue Border */
-	border: 1px #0898f8 solid;
+
+.block {
+  /* Light Blue Background */
+  background: #4ab7ff;
+  /* Curved Dark Blue Border */
+  border: 1px #0898f8 solid;
 }
+
 
 /* When mouse hovers over a block */
-.block:hover
-{
-	/* Make the color match the page background */
-	background: #0898f8;
+
+.block:hover {
+  /* Make the color match the page background */
+  background: #0898f8;
 }
+
 
 /* When mouse hovers over a catagory-block */
-.catagory-block:hover
-{
-	background: #4ab7ff;
-	/* No Border */
-	border: 0;
+
+.catagory-block:hover {
+  background: #4ab7ff;
+  /* No Border */
+  border: 0;
 }
+
 
 /* The container for the image at the bottom of the page */
-.footer
-{
-	/* All coordinates should be relative to the page */
-	position: absolute;
 
-	/* Ensure that images are at the bottom right corner of the page */
-	left: 0;
-	bottom: 0;
-	/* Width-wise, take up the whole page */
-	width: 100%;
-
-	/* The castle image should only appear once, and the other image can loop horozantally */
-	background: url(../images/footer-castle.png) no-repeat bottom left,
-	url(../images/footer-nocastle.png) repeat-x bottom left;
+.footer {
+  /* All coordinates should be relative to the page */
+  position: absolute;
+  /* Ensure that images are at the bottom right corner of the page */
+  left: 0;
+  bottom: 0;
+  /* Width-wise, take up the whole page */
+  width: 100%;
+  /* The castle image should only appear once, and the other image can loop horozantally */
+  background: url(../images/footer-castle.png) no-repeat bottom left, url(../images/footer-nocastle.png) repeat-x bottom left;
 }
 
-.footerSpace
-{
-	/* Indent to dirt for readability */
-	margin-top: 190px;
-
-	/* Align with body */
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 1024px;
+.footerSpace {
+  /* Indent to dirt for readability */
+  margin-top: 190px;
+  /* Align with body */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li, th, td, figcaption
-{
-	/* Grey color */
-	color: #414141;
+h1, h2, h3, h4, h5, h6, p, a, li, th, td, figcaption {
+  /* Grey color */
+  color: #414141;
 }
